@@ -4,10 +4,9 @@
     font-family:'Source Sans Pro', sans-serif;
    }
 #d1{
-background-color: red;
+background-color:#F26977;
 width: 100%;
 height: 40px;
-
 border-bottom-style: solid;
 border-bottom-color: white;
 }
@@ -15,14 +14,38 @@ marquee{
     margin-top: 10px;
 }
 #logo{
-  margin-top: 5%;
+  margin-top: 15%;
   margin-left: 20%;
     width: 70px;
     height: 40px;
-
+}
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  
+}
+.flex-container > div {
+  width: auto;
+  margin: 10px;
+  text-align: center;
+  
+}
+div > .heading, .para{
+  border-bottom: 1px solid #000; 
+  
+}
+p{
+  font-weight: bold;
+  font-family: 'Raleway', sans-serif;
+  padding:2em; 
+}
+h1{
+  margin-top: 1em;
+  font-size: 4em;
+  font-family: 'Anton', sans-serif;
 }
 header{
-    background: #0e0e0ecc;;
+    background:#4C4C4C;
     display: flex;
    justify-content: space-between;
 }
@@ -51,12 +74,21 @@ li a {
   section{
       height: 600px;
       width: auto;
-      background-image: url(mockups/floral.png)
+      
   }
   @media (max-width:600px){
+    .flex-container {
+      display: flex;
+      flex-direction: column;
+    }
+    #fig{
+      display: flex;
+    flex-direction: column;
+    }
     
     nav{
-         background-image: url(images/Menu_48px.png) ; 
+         background-image: url(mockups/Menu_48px.png) ;
+        margin-right: 5%;
         width: 40px;
         height: 50px;
    
@@ -64,5 +96,40 @@ li a {
       ul{
           display: none;
       }
+}
 
+
+main{ 
+  display: flex;
+  justify-content: space-around;
+  height: 450px;
+  background: #F18D97 url(mockups/floral.png);
+}
+.headd{
+margin-top: 10px;
+  text-align: center;
+ 
+}
+button{
+  color: #F18D97;
+  border: #000;
+  height:60px; 
+  background-color: #000;
+width: 250px;
+font-size: 25px;
+font-family: cursive;
+margin-top: 1em;
+}
+#fig{
+  display: flex;
+  justify-content: space-evenly;
+   flex-direction: row;
+
+}
+#services{
+
+  border: solid;
+  margin-top: 0px;
+  height: 450px;
+  background: url(mockups/floral.png);
 }
