@@ -102,8 +102,9 @@ li a {
 main{ 
   display: flex;
   justify-content: space-around;
-  height: 450px;
+  height: auto;
   background: #F18D97 url(mockups/floral.png);
+  padding-bottom: 3%;
 }
 .headd{
 margin-top: 10px;
