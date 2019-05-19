@@ -2,6 +2,7 @@
 *{
     margin: 0px;
     font-family:'Source Sans Pro', sans-serif;
+    text-align: center;
    }
 #d1{
 background-color:#F26977;
@@ -22,12 +23,13 @@ marquee{
 .flex-container {
   display: flex;
   flex-direction: column;
+  padding-bottom: 4em;
   
 }
 .flex-container > div {
   width: auto;
-  margin: 10px;
-  text-align: center;
+ 
+  
   
 }
 div > .heading, .para{
@@ -71,7 +73,8 @@ li a {
   li a:hover {
     color: red;
   }
-  section{
+  section{ 
+    display: block;
       height: auto;
       width: auto;
       
@@ -81,11 +84,7 @@ li a {
       display: flex;
       flex-direction: column;
     }
-    #fig{
-      display: flex;
-    flex-direction: column;
-    }
-    
+  
     nav{
          background-image: url(mockups/Menu_48px.png) ;
         margin-right: 5%;
@@ -104,33 +103,57 @@ main{
   justify-content: space-around;
   height: auto;
   background: #F18D97 url(mockups/floral.png);
-  padding-bottom: 3%;
-}
-.headd{
-margin-top: 10px;
-  text-align: center;
  
 }
 button{
   color: #F18D97;
   border: #000;
-  height:60px; 
+ padding: 1em 2em 1em 2em; 
   background-color: #000;
-width: 250px;
 font-size: 25px;
 font-family: cursive;
 margin-top: 1em;
 }
-#fig{
-  display: flex;
-  justify-content: space-evenly;
-   flex-direction: row;
 
-}
-#services{
-
-  border: solid;
+#services {
   margin-top: 0px;
-  height: 450px;
+  height: auto;
   background: url(mockups/floral.png);
+  background-color: #D6C6AC;
+}
+ #contact {
+   display:grid;
+   justify-content: center;
+ height: auto;
+  background: url(mockups/floral.png);
+  background-color: #AFC7C7 ;
+   
+}
+#services i{
+  font-size: 6em;
+}
+
+#services figure:hover{
+  color: #F26977;
+}
+
+footer{
+  background-color: #000;
+  color: whitesmoke;
+}
+h2{
+font-family: 'Pacifico', cursive;
+padding-top: 1em;
+padding-bottom: 1em;
+}
+#contact >ul i {
+border-style: solid;
+font-size: 2em;
+padding: 0.5em 0.5em 0.5em 0.5em;
+margin: 0 0.5em 1em 0.5em;
+border-radius: 4em;
+}
+#contact >ul i:hover{
+  background-color: #000;
+  color: #D6C6AC;
 }
