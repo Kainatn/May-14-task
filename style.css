@@ -15,8 +15,8 @@ marquee{
     margin-top: 10px;
 }
 #logo{
-  margin-top: 15%;
-  margin-left: 20%;
+  margin-top:0.5em;
+  margin-left: 2em;
     width: 70px;
     height: 40px;
 }
@@ -24,16 +24,16 @@ marquee{
   display: flex;
   flex-direction: column;
   padding-bottom: 4em ;
-  padding-left: 8em;
-  padding-right: 8em;
-  justify-content: center;
+  margin-right: 8em;
+  margin-left: 10em;
+  
   
 }
 .flex-container > div {
   width: auto;
- 
-  
-  
+}
+i{
+
 }
 div > .heading, .para{
   border-bottom: 1px solid #000; 
@@ -123,6 +123,7 @@ margin-top: 1em;
   height: auto;
   background: url(mockups/floral.png);
   background-color: #EFECE7;
+  padding-bottom: 2em;
 }
 
 #portfolio {
@@ -132,14 +133,16 @@ margin-top: 1em;
   background-color: #D6C6AC;
 }
 
-img{
+.flex-container img{
   height: 250px;
   width: 300px;
   padding-top: 2em;
-margin-left: 5em;
-   
+ border-radius:1em; 
+ position: relative;
+  
 }
 .row {
+  padding: 0 1em 0 1em;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -154,7 +157,7 @@ margin-left: 5em;
   flex: 1;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 600px) {
   .column {
     flex: 1
   }
@@ -165,9 +168,10 @@ margin-left: 5em;
 }
 
  #contact {
+  
    display:grid;
    justify-content: center;
- height: auto;
+   height: auto;
   background: url(mockups/floral.png);
   background-color: #AFC7C7 ;
    
@@ -194,7 +198,7 @@ padding-bottom: 1em;
 }
 #contact .svg-inline--fa {
 border-style: solid;
-font-size: 3em;
+font-size: 1.5em;
 padding: 0.5em 0.5em 0.5em 0.5em;
 margin: 0 0.5em 1em 0.5em;
 border-radius: 4em;
@@ -202,8 +206,11 @@ border-radius: 4em;
 #contact >ul .svg-inline--fa:hover{
   background-color: #000;
   color: #D6C6AC;
-}
+  }
 
+  .svg-inline--fa{
+    transition:  color 2s,background-color 1s;
+  }
 footer .svg-inline--fa {
   display: inline-block;
   margin: 0 5px;
@@ -211,4 +218,5 @@ footer .svg-inline--fa {
 }
 footer:hover .svg-inline--fa{
   color: red;
+
 }
