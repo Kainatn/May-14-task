@@ -23,7 +23,10 @@ marquee{
 .flex-container {
   display: flex;
   flex-direction: column;
-  padding-bottom: 4em;
+  padding-bottom: 4em ;
+  padding-left: 8em;
+  padding-right: 8em;
+  justify-content: center;
   
 }
 .flex-container > div {
@@ -128,6 +131,39 @@ margin-top: 1em;
   background: url(mockups/floral.png);
   background-color: #D6C6AC;
 }
+
+img{
+  height: 250px;
+  width: 300px;
+  padding-top: 2em;
+margin-left: 5em;
+   
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+ justify-content: center;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  justify-content: center;
+  flex: 1;
+}
+
+@media screen and (min-width: 800px) {
+  .column {
+    flex: 1
+  }
+
+  .double-column {
+    flex: 2
+  }
+}
+
  #contact {
    display:grid;
    justify-content: center;
@@ -142,7 +178,6 @@ margin-top: 1em;
   font-size: 5em;
   height: 1em;
   overflow: visible;
-
 }
 #services figure:hover{
   color: #F26977;
