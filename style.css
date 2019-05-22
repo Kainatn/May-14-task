@@ -38,7 +38,7 @@ h1{
   font-size: 4em;
   font-family: 'Anton', sans-serif;
 }
-header{
+#main_nav{
     background:#4C4C4C;
     display: flex;
    justify-content: space-between;
@@ -97,9 +97,13 @@ li a {
 .inner-div
 {display: inline-block;
 }
-.inner-div p{
+.inner-div #para{
+  padding-top: 1em;
   border-top: 1px solid #000;  
-  border-bottom: 1px solid #000;
+}
+.inner-div #para2{
+  padding-top: 0;
+  border-bottom: 1px solid #000;  
 }
 main{ 
   height: auto;
@@ -124,6 +128,10 @@ button:hover{
   background: url(mockups/floral.png);
   background-color: #EFECE7;
   padding-bottom: 2em;
+}
+.parag
+{  border-top: 1px solid #000; 
+  border-bottom: 1px solid #000;  
 }
 
 #portfolio {
