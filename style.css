@@ -1,6 +1,6 @@
 /* write your styles here */
 *{
-    margin: 0px;
+    margin: 0;
     font-family:'Source Sans Pro', sans-serif;
     text-align: center;
    }
@@ -23,18 +23,16 @@ marquee{
 .flex-container {
   display: flex;
   flex-direction: column;
-  padding-bottom: 4em ;
-  margin-right: 8em;
-  margin-left: 10em;
-  
-  
+  padding-bottom: 4em ; 
 }
 .flex-container > div {
   width: auto;
 }
-i{
-
+.flex-container .heading,.para{
+  margin-right: 8em;
+margin-left: 10em;
 }
+
 div > .heading, .para{
   border-bottom: 1px solid #000; 
   
@@ -62,8 +60,8 @@ li a {
     text-decoration: none;
   }
   nav{
-      position: sticky;
-      margin-top: 10px
+    
+      margin-top: 10px;
   }
   mark{
       font-weight: bold;
@@ -102,8 +100,7 @@ li a {
 
 
 main{ 
-  display: flex;
-  justify-content: space-around;
+  
   height: auto;
   background: #F18D97 url(mockups/floral.png);
  
@@ -117,9 +114,11 @@ font-size: 25px;
 font-family: cursive;
 margin-top: 1em;
 }
-
+button:hover{
+  background: rgba(0, 0, 0, 0.83);
+}
 #services {
-  margin-top: 0px;
+  margin-top: 0;
   height: auto;
   background: url(mockups/floral.png);
   background-color: #EFECE7;
@@ -127,46 +126,11 @@ margin-top: 1em;
 }
 
 #portfolio {
-  margin-top: 0px;
+  margin-top: 0;
   height: auto;
   background: url(mockups/floral.png);
   background-color: #D6C6AC;
 }
-
-.flex-container img{
-  height: 250px;
-  width: 300px;
-  padding-top: 2em;
- border-radius:1em; 
- position: relative;
-  
-}
-.row {
-  padding: 0 1em 0 1em;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
- justify-content: center;
-}
-
-.column {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
-  justify-content: center;
-  flex: 1;
-}
-
-@media screen and (min-width: 600px) {
-  .column {
-    flex: 1
-  }
-
-  .double-column {
-    flex: 2
-  }
-}
-
  #contact {
   
    display:grid;
@@ -183,7 +147,7 @@ margin-top: 1em;
   height: 1em;
   overflow: visible;
 }
-#services figure:hover{
+#services figure:hover .svg-inline--fa{
   color: #F26977;
 }
 
@@ -219,4 +183,64 @@ footer .svg-inline--fa {
 footer:hover .svg-inline--fa{
   color: red;
 
+}
+.conatiner{
+     min-height: 50px;
+    margin: 70px auto 0;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.conatiner .box{
+  position: relative;
+  width: 300px;
+  height: 280px;
+  margin: 10px;
+  display: inline-block;
+}
+.conatiner .box .imgbox{
+  position: relative;
+  overflow: hidden;
+  border-radius: 13px;
+}
+.conatiner .box .imgbox img{
+  max-width: 100%;
+   transition: transform 2s;
+   width: 300px;
+  height: 273px;
+}
+.conatiner .box:hover .imgbox img{
+transform: scale(1.2);
+  
+}
+.conatiner .box  .details{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom:0;
+  right: 0;
+  background: rgba(0,0,0, .8);
+  transform: scaleY(0);
+  transition: transform 0.5s;
+  border-radius: 13px;
+}
+.conatiner .box:hover  .details{
+  transform: scaleY(1);
+  cursor: pointer;
+
+}
+.conatiner .box  .details .content{
+
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 15px;
+  color: white;
+}
+
+.conatiner .box  .details .content .svg-inline--fa{
+  border-style: solid;
+border-radius: 100%;
+padding: 1em;
+margin-left: 1.5em;
 }
