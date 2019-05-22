@@ -28,15 +28,6 @@ marquee{
 .flex-container > div {
   width: auto;
 }
-.flex-container .heading,.para{
-  margin-right: 8em;
-  margin-left: 8em;
-}
-
-div > .heading, .para{
-  border-bottom: 1px solid #000; 
-  
-}
 p{
   font-weight: bold;
   font-family: 'Raleway', sans-serif;
@@ -98,9 +89,19 @@ li a {
       }
 }
 
-
+.outer-div
+{
+  padding: 1em;
+  text-align: center;
+}
+.inner-div
+{display: inline-block;
+}
+.inner-div p{
+  border-top: 1px solid #000;  
+  border-bottom: 1px solid #000;
+}
 main{ 
-  
   height: auto;
   background: #F18D97 url(mockups/floral.png);
  
